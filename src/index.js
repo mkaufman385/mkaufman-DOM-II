@@ -51,4 +51,16 @@ window.onload = function (event) {
       destination.style.fontWeight = "initial";
     });
   }
+
+  //9-RESIZE
+  const copyright = document.querySelector(".footer p");
+  window.addEventListener("resize", (event) => {
+    copyright.style.color = "red";
+  });
+
+  //10-SCROLL
+  const copyright2 = document.querySelector(".footer p");
+  window.addEventListener("wheel", (event) => {
+    copyright2.style.textDecoration = "underline";
+  });
 };
